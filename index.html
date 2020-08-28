@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zingggMp3</title>
+    <link rel="stylesheet" href="./header.css">
+    <script src="https://kit.fontawesome.com/5e7d2a297a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/pieces/main/main1/main1.css">
+    <link rel="stylesheet" href="/pieces/header/header.css">
+    <link rel="stylesheet" href="/pieces/main/main2/main2.css">
+    <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="pieces/main/main3/main3.css">
+  <link rel="stylesheet" href="pieces/main/main4/main4.css">
+  <link rel="stylesheet" href="pieces/main/main5/main5.css">
+  <link rel="stylesheet" href="pieces/rooter/rooter.css">
+  <link rel="stylesheet" href="pieces/main/main6/main6.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.19.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.19.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.19.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.19.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.19.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class=" container header">
+        <div class="container header1">
+            <a class="logo" href="#"><img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg" alt=""></a>
+            <div class="searchInput">
+                <button><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Tim kiem bai hat, ca si hoac mv...">
+
+            </div>
+            <div class="user">
+                <i class="fas fa-upload fa-10x"></i>
+                <i class="far fa-bell"></i>
+                <div class="avatar"></div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    
+        <div class="header2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trang chu</a>
+                  </li>
+                <li class="nav-item haveZingChat">
+                  <a class="nav-link " href="#">#ZINGCHAT</a>
+                    <table class="table table-borderless zingChat">
+                      <thead>
+                        <tr>
+                          <th scope="col"><a href="#">Realy Time</a></th>
+                          <th scope="col"><a href="#">Tuan Time</a></th>
+                          <th scope="col"><a href="#">US-UK Time</a></th>
+                          <th scope="col"><a href="#">K-POP</a></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="#">Bai Hat</a></th>
+                          <td><a href="#">Bai Hat</a></td>
+                          <td><a href="#">Bai Hat</a></td>
+                          <td><a href="#">Bai Hat</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">MV</a></th>
+                          <td><a href="#">MV</a></td>
+                          <td><a href="#">MV</a></td>
+                          <td><a href="#">MV</a></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Moi Phat Hanh</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Chu de</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Nhac Ca Nhan </a>
+                </li>
+                <li class="nav-item haveTop100">
+                    <a class="nav-link" href="#">TOP 100</a>
+                    <table class="table table-borderless top100">
+                      <thead>
+                        <tr>
+                          <th scope="col"><a href="#">Viet Nam</a></th>
+                          <th scope="col"><a href="#">Chau My</a></th>
+                          <th scope="col"><a href="#">Chau A</a></th>
+                          <th scope="col"><a href="#">Hoa Tau</a></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="#">Nhac Tre</a></th>
+                          <td><a href="#">POP</a></td>
+                          <td><a href="#">Han Quoc</a></td>
+                          <td><a href="#">Clasical</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">Nhac Tru tinh</a></th>
+                          <td><a href="#">Rock</a></td>
+                          <td><a href="#">Nhat Ban</a></td>
+                          <td><a href="#">Piano</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">Que Huong</a></th>
+                          <td><a href="#">Rap/Hip Hop</a></td>
+                          <td><a href="#">Hoa Ngu</a></td>
+                          <td><a href="#">Guitar</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">Nhac Cach Mang</a></th>
+                          <td><a href="#">Country</a></td>
+                          <td><a href="#"></a></td>
+                          <td><a href="#">Violin</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">Rap/Hip Hop Viet</a></th>
+                          <td><a href="#">Electric Dance</a></td>
+                          <td><a href="#"></a></td>
+                          <td><a href="#">Cello</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">Rock Viet</a></th>
+                          <td><a href="#">R&B/Soul</a></td>
+                          <td><a href="#"></a></td>
+                          <td><a href="#">Saxophoen</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">Dance Viet</a></th>
+                          <td><a href="#">Audiophile</a></td>
+                          <td><a href="#"></a></td>
+                          <td><a href="#">Nhac Cu Khac</a></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nghe si </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Album</a>
+                  </li>
+                  <button class="vip">VIP</button>
+            </ul>
+        </div>
+    </div>
+    <div class="container-slide">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class=" w-70" src="https://photo-zmp3.zadn.vn/banner/9/7/a/6/97a6ec45fe39a31e2de2da0978f7875b.jpg"
+              alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-70" src="https://photo-zmp3.zadn.vn/banner/b/4/8/2/b4826b18618c351a26400ee92faa1f5b.jpg"
+              alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-70" src="https://photo-zmp3.zadn.vn/banner/b/5/f/0/b5f0e4f9c3bce3a1fc83cc1e4c8b303f.jpg"
+              alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="container1-top">
+          <h4>Phố vắng người anh nhớ em</h4>
+      </div>
+      <div class="container1-mid">
+          <div class="container1-mid-item">
+              <div class="container1-mid-item-background">
+                  <div class="icon-background"> 
+                      <i class="far fa-play-circle fa-3x"></i>
+                  </div>
+                  
+                      <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/8/f/a/b8fa4082b001efb462461f609f5c0241.jpg" alt="">
+              </div>
+              <a href="">Rap khi nhớ về em</a>
+          </div>
+          <div class="container1-mid-item">
+              <div class="container1-mid-item-background">
+                  <div class="icon-background"> 
+                      <i class="far fa-play-circle fa-3x"></i>
+                  </div>
+                  
+                      <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/avatars/4/b/6/8/4b68b11534f6d44df224b4246552f265.jpg" alt="">                    
+
+              </div>
+              <a href="">Nhớ em đến dại khờ</a>
+          </div>        <div class="container1-mid-item">
+              <div class="container1-mid-item-background">
+                  <div class="icon-background"> 
+                      <i class="far fa-play-circle fa-3x"></i>
+                  </div>
+                  
+                  <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/2/7/4/5274954a47747e51c7856d175b86a2ae.jpgs" alt="">                    
+
+              </div>
+              <a href="">Anh sẽ giả vờ nhớ em</a>
+          </div>        <div class="container1-mid-item">
+              <div class="container1-mid-item-background">
+                  <div class="icon-background"> 
+                      <i class="far fa-play-circle fa-3x"></i>
+                  </div>
+                  
+                  <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/6/f/8/76f8bc3f91c8fbebf8b80f621c05f252.jpg" alt="">                    
+
+              </div>
+              <a href="">Không biết viết gì</a>
+          </div>        <div class="container1-mid-item">
+              <div class="container1-mid-item-background">
+                  <div class="icon-background"> 
+                      <i class="far fa-play-circle fa-3x"></i>
+                  </div>
+                  
+                      <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/1/6/f/4/16f4903b0df9966fd43114a53d1db152.jpg" alt="">                    
+
+              </div>
+              <a href="">éo có ny mà nhớ</a>
+          </div>      
+          
+      </div>
+  </div>
+  <div class="container1">
+    <div class="container1-top">
+        <h4>Gợi ý cho hôm nay</h4>
+    </div>
+    <div class="container1-mid">
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                  <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/f/c/c/b/fccb4858d367711ed3083981e26a8b1e.jpg" alt="">                
+            </div>
+            <a href="">Rap party</a>
+        </div>
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/3/8/0/238063a7176f79784e03ef74bb0d9c64.jpg" alt="">                    
+
+            </div>
+            <a href=""></a>Nhạc phim buồn</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/4/2/6/f/426f70ed262e2bf0a7289216ec636559.jpg" alt="">                    
+
+            </div>
+            <a href="">Nhạc Hoa buồn</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/6/f/8/76f8bc3f91c8fbebf8b80f621c05f252.jpg" alt="">                    
+
+            </div>
+            <a href="">Nhạc gì đó buồn</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/1/6/f/4/16f4903b0df9966fd43114a53d1db152.jpg" alt="">                    
+
+            </div>
+            <a href="#">Thích thì buồn</a>
+        </div>      
+        
+    </div>
+</div>
+<div class="container1">
+  <div class="container1-top">
+      <h4>Âm nhạc muôn màu</h4>
+  </div>
+  <div class="container1-mid">
+      <div class="container1-mid-item">
+          <div class="container1-mid-item-background">
+              <div class="icon-background"> 
+                  <i class="far fa-play-circle fa-3x"></i>
+              </div>
+              <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/8/1/3/b813f09986b62684ca1ec655820f5702.jpg" alt="">
+          </div>
+          <a href="">Yêu thì yêu</a>
+      </div>
+      <div class="container1-mid-item">
+          <div class="container1-mid-item-background">
+              <div class="icon-background"> 
+                  <i class="far fa-play-circle fa-3x"></i>
+              </div>
+              
+                  <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/3/8/0/238063a7176f79784e03ef74bb0d9c64.jpg" alt="">                    
+
+          </div>
+          <a href=""></a>Nhạc phim buồn</a>
+      </div>        <div class="container1-mid-item">
+          <div class="container1-mid-item-background">
+              <div class="icon-background"> 
+                  <i class="far fa-play-circle fa-3x"></i>
+              </div>
+              
+              <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/4/2/6/f/426f70ed262e2bf0a7289216ec636559.jpg" alt="">                    
+
+          </div>
+          <a href="">Nhạc Hoa buồn</a>
+      </div>        <div class="container1-mid-item">
+          <div class="container1-mid-item-background">
+              <div class="icon-background"> 
+                  <i class="far fa-play-circle fa-3x"></i>
+              </div>
+              
+              <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/6/f/8/76f8bc3f91c8fbebf8b80f621c05f252.jpg" alt="">                    
+
+          </div>
+          <a href="">Nhạc gì đó buồn</a>
+      </div>        <div class="container1-mid-item">
+          <div class="container1-mid-item-background">
+              <div class="icon-background"> 
+                  <i class="far fa-play-circle fa-3x"></i>
+              </div>
+              
+                  <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/1/6/f/4/16f4903b0df9966fd43114a53d1db152.jpg" alt="">                    
+
+          </div>
+          <a href="#">Thích thì buồn</a>
+      </div>      
+      
+  </div>
+</div>
+<div class="container main2">
+  <div class="main2-left">
+      <div class="main2-left-bg">
+          <a href="#">#Zingchart</a>  
+          <p>18/08/2020 04:14</p>
+          <button class="bt"><span><i class="far fa-play-circle fa-lg"></i></span>Play all</button>
+      </div>
+      <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.0-9/p720x720/117291568_1779745348831374_4002142444556063335_o.jpg?_nc_cat=103&_nc_sid=ca434c&_nc_ohc=TEMKr1FeUR8AX-97vxe&_nc_ht=scontent-hkg4-1.xx&_nc_tp=6&oh=65ddf2b24a897d0af38fce4ecbe79764&oe=5F627D5F" alt="fuckme">
+  </div>
+  <div class="main2-right">
+      <div class="main2-right-items">
+          <p class="frank">01</p>
+          <div class="main2-right-items-bg">
+              <div class="main2-right-items-bg-icon">
+                  <i class="far fa-play-circle fa-2x"></i>
+
+              </div>
+              <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/b/f/3/fbf38164222f12d85a41e7631b944b20.jpg" alt="">
+
+          </div>
+          <div class="main2-right-items-bg-infor">
+              <p class="song">Gia nhu chua tung quen</p>
+              <p class="singer">HKT</p>
+          </div>
+             <p class="rank">Top1</p> 
+      </div>
+      <div class="main2-right-items">
+          <p class="frank">02</p>
+          <div class="main2-right-items-bg">
+              <div class="main2-right-items-bg-icon">
+                  <i class="far fa-play-circle fa-2x"></i>
+
+              </div>
+              <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/b/f/3/fbf38164222f12d85a41e7631b944b20.jpg" alt="">
+
+          </div>
+          <div class="main2-right-items-bg-infor">
+              <p class="song">Gia nhu da tung quen</p>
+              <p class="singer">HIV</p>
+          </div>
+             <p class="rank">Top2</p> 
+      </div> <div class="main2-right-items">
+          <p class="frank">03</p>
+          <div class="main2-right-items-bg">
+              <div class="main2-right-items-bg-icon">
+                  <i class="far fa-play-circle fa-2x"></i>
+
+              </div>
+              <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/b/f/3/fbf38164222f12d85a41e7631b944b20.jpg" alt="">
+
+          </div>
+          <div class="main2-right-items-bg-infor">
+              <p class="song">A` the a`</p>
+              <p class="singer">H5N1</p>
+          </div>
+             <p class="rank">Top3</p> 
+      </div> <div class="main2-right-items">
+          <p class="frank">04</p>
+          <div class="main2-right-items-bg">
+              <div class="main2-right-items-bg-icon">
+                  <i class="far fa-play-circle fa-2x"></i>
+
+              </div>
+              <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/b/f/3/fbf38164222f12d85a41e7631b944b20.jpg" alt="">
+
+          </div>
+          <div class="main2-right-items-bg-infor">
+              <p class="song">A` the a` gi ma a`</p>
+              <p class="singer">H6N2</p>
+          </div>
+             <p class="rank">Top4</p> 
+      </div> <div class="main2-right-items">
+          <p class="frank">05</p>
+          <div class="main2-right-items-bg">
+              <div class="main2-right-items-bg-icon">
+                  <i class="far fa-play-circle fa-2x"></i>
+
+              </div>
+              <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/b/f/3/fbf38164222f12d85a41e7631b944b20.jpg" alt="">
+
+          </div>
+          <div class="main2-right-items-bg-infor">
+              <p class="song">Phai toi toi dam cho may nhat</p>
+              <p class="singer">Huu Da</p>
+          </div>
+             <p class="rank">Top5</p> 
+      </div>
+  </div>
+</div>
+<div class="container main3 ">
+  <div class="container main3">
+    <div class="main3-items">
+        <img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/song-vn-2x.jpg" alt="">
+    </div>
+    <div class="main3-items">
+        <img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/mv-vn-2x.jpg" alt="">
+    </div>
+    <div class="main3-items">
+        <img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/web_song_usuk.png" alt="">
+    </div>
+    <div class="main3-items">
+        <img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/web_song_kpop.png" alt="">
+    </div>
+</div>
+ </div>
+ <div class="container main4">
+    <div class="main4-items">
+       <div class="main4-items-avatarsinger">
+           <div class="main4-items-avatarsinger-bg">
+            <i class="far fa-play-circle"></i>
+           </div>
+           <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/9/7/c/597c5594c732d3857de91b16156f7f32.jpg" alt="">
+       </div> 
+        <div class="main4-items-infor">
+            <button><span><i class="far fa-star"><a href="#">zingchoice</a></i></span></button>
+            <div class="main4-items-singer">
+                HKT
+            </div>
+        </div>
+    </div>
+    <div class="main4-items">
+        <div class="main4-items-avatarsinger">
+            <div class="main4-items-avatarsinger-bg">
+             <i class="far fa-play-circle"></i>
+            </div>
+            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/9/7/c/597c5594c732d3857de91b16156f7f32.jpg" alt="">
+        </div> 
+         <div class="main4-items-infor">
+             <button><span><i class="far fa-star"><a href="#">zingchoice</a></i></span></button>
+             <div class="main4-items-singer">
+                 HKT
+             </div>
+         </div>
+     </div>
+     <div class="main4-items">
+        <div class="main4-items-avatarsinger">
+            <div class="main4-items-avatarsinger-bg">
+             <i class="far fa-play-circle"></i>
+            </div>
+            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/9/7/c/597c5594c732d3857de91b16156f7f32.jpg" alt="">
+        </div> 
+         <div class="main4-items-infor">
+             <button><span><i class="far fa-star"><a href="#">zingchoice</a></i></span></button>
+             <div class="main4-items-singer">
+                 HKT
+             </div>
+         </div>
+     </div>
+     
+</div>
+<div class="container1">
+    <div class="container1-top">
+        <h4>Top 100</h4>
+    </div>
+    <div class="container1-mid">
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/0/3/d/e/03decb68a9d6c5a5e53af22c37d29561.jpg" alt="">
+            </div>
+            <a href="">Top 100 rap/Hip</a>
+        </div>
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/f/c/d/efcdc63fa9c3bf205937d17eabccc99c.jpg" alt="">
+            </div>
+            <a href="">Top 100 Nhac Au My</a>
+        </div>        
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/5/0/6/55066114a968ccce3141745b619ad4e5.jpg" alt="">
+            </div>
+            <a href="">Top 100 Au My hay</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/9/7/f/597f4af28e7a627f2d4874fb0f76e852.jpg" alt="">
+            </div>
+            <a href="">Top EDM hay</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/5/7/b/e57b43ebb1736ef20b5037ad379e36d9.jpg" alt="">
+            </div>
+            <a href="">Top New Hit</a>
+        </div>      
+        
+    </div>
+</div>
+<div class="container1">
+    <div class="container1-top">
+        <h4>Radio Yêu Thích</h4>
+    </div>
+    <div class="container1-mid">
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-playlist-zmp3.zadn.vn/radio?src=HavwqN7EzbiAHZUTDj-s7q01DyesZxP8MW5zdMRVwXzSLt3APDtiI0XK8yfYZBH33GKjnM7PjrjIGdx99uka70OKA9PzhSb-PGWfYo9z&size=thumb/240_240" alt="">
+            </div>
+            <a href="">Radio XOXANNE</a>
+        </div>
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-playlist-zmp3.zadn.vn/radio?src=HavwqN7EzbiAHZUTDj_g0WaRTPqsmRaV2neZdM37w4XV5IJ1DSdh5Ln38POmohv73HSZpmlDkKXW7oRE2yU-K3XSTy9DbQqNR0eXdHUYvq8j9YMJ0AYfNW&size=thumb/240_240" alt="">  
+            </div>
+            <a href="">Radio Chocolate </a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-playlist-zmp3.zadn.vn/radio?src=HavwqN7EzbiAHZUTDj-sIK03DyqstROPM08jcZEFu18FLYgJDuNbHbbRU98nWU8J3L8lcpRRjmK5G7wNS8caGb4MACWgjKNC7NwW5AKleTJSYid5x458LL0EOW2jOIaWJwglqtatP14f8dq&size=thumb/240_240" alt="">  
+            </div>
+            <a href="">Radio Hôn khắp nơi</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-playlist-zmp3.zadn.vn/radio?src=HavwqN7EzbiAHZUTDj-sIq07DvesYhPCN01-ds3VjauAK7oOOudg609LVCbetU8S1WSgoco8ubHV4ol6Ajhn4mj5VPbm_HM82LtIsUe94acSmbbnMC5GG29z&size=thumb/240_240" alt="">  
+            </div>
+            <a href="">Radio Sơ Kiến</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-playlist-zmp3.zadn.vn/radio?src=HavwqN7EzbiAHZUTDj-s7405DyestxPBNb8fo3w9uXrUMY-RDjEv65qFT9yzWUfENLbmdpA5w0417Y6JTDVxHbL8TymkvBWH4YzProwsrHe&size=thumb/240_240" alt="">  
+            </div>
+            <a href="#">Radio Game Over</a>
+        </div>      
+        
+    </div>
+  </div>
+<div class="container1">
+    <div class="container1-top">
+        <h4>Âm nhạc là niềm vui</h4>
+    </div>
+    <div class="container1-mid">
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/c/c/f/5ccf30ca09d321a73fb1ee55617f7479.jpg" alt="">
+            </div>
+            <a href="">Lạ Lạ quen quen</a>
+        </div>
+        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/3/b/5/1/3b518592ef1392e4c15f9d9eef1ec26c.jpg" alt="">  
+            </div>
+            <a href=""></a>Casting Band</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+            <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/6/e/8/e6e86805f216b265eb5ac20b583d8828.jpg" alt="">  
+            </div>
+            <a href="">Nhạc K-POP đầy hứa hẹn</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/4/2/6/f/426f70ed262e2bf0a7289216ec636559.jpg" alt="">  
+            </div>
+            <a href="">Nhạc Hoa buồn không tà xiết</a>
+        </div>        <div class="container1-mid-item">
+            <div class="container1-mid-item-background">
+                <div class="icon-background"> 
+                    <i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/8/b/b/3/8bb392ba9609bd2d2a9c9143813685a5.jpg" alt="">  
+            </div>
+            <a href="#">Nhạc Bolero Đầy hứa hẹn</a>
+        </div>      
+        
+    </div>
+  </div>
+  <div class="container main6">
+    <div class="main6-item">
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+    </div>
+    <div class="main6-item">
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+    </div>
+    <div class="main6-item">
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+        <div class="main6-items">
+            <div class="main6-items-img">
+                <div class="main6-items-img-bg"><i class="far fa-play-circle fa-3x"></i>
+                </div>
+                <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+            </div>
+            <div class="main6-items-tittle">
+                <a href="#" class="main6-items-tittle-song">Bỉ Ngạn</a>
+                <a href="#" class="main6-items-tittle-singer">
+                    Aiden
+                </a>
+            </div>
+            <!--<span class="main6-items-icon"><i class="fas fa-microphone"></i><i class="fas fa-ellipsis-v"></i></span>
+            -->
+        </div>
+    </div>
+</div>
+  <div class="container main5">
+    
+        <div class="container1-top">
+            <h4>Âm nhạc là niềm vui</h4>
+        </div>
+        <div class="main5-item">
+            <div class="main5-items">
+                <div class="main5-items-img">
+                    <div class="main5-items-img-bg">
+                        <i class="far fa-play-circle fa-3x"></i>
+                    </div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/0/f/2/b0f2617eac4b87fd0affe726bfd81a0a.jpg" alt="">
+                </div>
+                <div class="main5-items-infor">
+                    <div class="main5-items-infor-name">
+                        <a class="main5-items-infor-name-singer" href="#">Bỏ lỡ 1 người</a>
+                        <a class="main5-items-infor-name-song" href="#">Lê Bảo Bình</a>
+                    </div>
+                    <div class="main5-items-infor-rank">
+                        #1
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main5-items">
+                <div class="main5-items-img">
+                    <div class="main5-items-img-bg">
+                        <i class="far fa-play-circle fa-3x"></i>
+                    </div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/c/c/7/0/cc709844d6aa6d3bf943bb91cf7ba662.jpg" alt="">
+                </div>
+                <div class="main5-items-infor">
+                    <div class="main5-items-infor-name">
+                        <a class="main5-items-infor-name-singer" href="#">Họa Mây</a>
+                        <a class="main5-items-infor-name-song" href="#">X2X</a>
+                    </div>
+                    <div class="main5-items-infor-rank">
+                        #2
+                    </div>
+                </div>
+            </div>
+            <div class="main5-items">
+                <div class="main5-items-img">
+                    <div class="main5-items-img-bg">
+                        <i class="far fa-play-circle fa-3x"></i>
+                    </div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/1/c/7/e1c7c96cceb6b142411ff40b8f8632f5.jpg" alt="">
+                </div>
+                <div class="main5-items-infor">
+                    <div class="main5-items-infor-name">
+                        <a class="main5-items-infor-name-singer" href="#">Hạnh Phúc Giả Vờ</a>
+                        <a class="main5-items-infor-name-song" href="#">Vy Oanh</a>
+                    </div>
+                    <div class="main5-items-infor-rank">
+                        #3
+                    </div>
+                </div>
+            </div>
+           
+        </div>    
+</div>
+
+<div class="rooter">
+    <div class="rooter-tittle">
+        <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v0.1.28/images/logo-mp-3.png" alt="">
+        <p>Một sản phẩm của zalo</p>
+    </div>
+    <div class="rooter-intro">
+        <ul class="rooter-intro-items">
+            <li><a href="#">Giới thiệu</a></li> 
+            <li><a href="#">Liên hệ</a></li> 
+            <li><a href="#">Quảng cáo</a></li> 
+            <li><a href="#">Góp ý</a></li> 
+            <li><a href="#">Thỏa thuận sử dụng</a></li> 
+
+        </ul>
+    </div>
+
+</div>
+<p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+
+
+</body>
+   
+    
+</html>

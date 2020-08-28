@@ -1,0 +1,164 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.header {
+    background-color: whitesmoke;
+}
+.header1 {
+    display: flex;
+   margin: 0px 20px; 
+   padding: 0px auto;
+   background-color: whitesmoke;
+  
+   align-items: center;
+   justify-content: space-around;
+}
+.logo img {
+    height: 130px;
+    width: 130px;
+    padding: 0px 10px;
+}
+.searchInput {
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+    background-color: white;
+    border: 1px  solid #545c69;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 25px;
+    margin: 0 auto;
+    
+}
+.searchInput button {
+    background-color:transparent ;
+    border: none;
+    justify-content: center;
+    height:19px ;
+    margin: 5px;
+    color: #46484a;
+}
+.searchInput input {
+    border: none;
+    padding-left: 10px;
+    background-color: transparent;
+    flex-grow: 1;
+    outline: none;
+    
+}
+.user {
+    display: flex;
+    padding: 0 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.user i {
+
+    font-size: 1.5rem;
+    height: 10px;
+    background-color: transparent;
+    padding: 10px;
+    opacity: 0.7;
+}
+.user .avatar {
+    background-image: url('https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/s960x960/110994710_962907337510503_8205287038741955096_o.jpg?_nc_cat=102&_nc_sid=07e735&_nc_ohc=DvVvcATykOwAX8GgYLJ&_nc_ht=scontent.fhan2-1.fna&_nc_tp=7&oh=7b9d0eb3456cff7ab889e0bca9e6c6aa&oe=5F4EFCBE');
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-position: center ;
+    border-radius: 50%;
+
+}
+.haveZingChat {
+    position: relative;
+
+}
+.zingChat {
+    
+    display: none;
+    background-color:white ;
+    border-radius: 5px;
+}
+.zingChat a:hover {
+    text-decoration: none;
+}
+.haveZingChat:hover .zingChat {
+    display: block;
+}
+.zingChat td  {
+    cursor: pointer;
+}
+.zingChat th {
+    cursor: pointer;
+}
+
+.table thead th:hover  {
+    background-color:#d0dbd3;
+} 
+.table tbody td:hover {
+    background-color:#d0dbd3;
+}
+.haveTop100 {
+
+    position: relative;
+}
+.haveTop100 .top100 {
+    display: none;
+
+}
+
+.haveTop100:hover .top100 {
+    display: block;
+}
+.haveTop100 a:hover {
+    text-decoration: none;
+}
+.vip {
+    background: rgb(246,216,13);
+background: linear-gradient(90deg, rgba(246,216,13,1) 0%, rgba(185,210,50,1) 100%);
+    height: 25px;
+    width: 55px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.playlist {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.playlist-item {
+    padding: 10px 15px;
+}
+.album-icon {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    background-image: url('https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/8/f/a/b8fa4082b001efb462461f609f5c0241.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 60px;
+ 
+    
+}
+.overlay-icon {
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.overlay-icon:hover {
+    opacity: 1;
+    transition: width 0.7s;
+}
+.slide {
+    text-align: center;
+    margin:10px 150px ;
+    padding:5px 10px ;
+}

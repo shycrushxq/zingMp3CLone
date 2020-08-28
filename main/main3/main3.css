@@ -1,0 +1,20 @@
+.main3 {
+    display: flex;
+    margin: 10px 115px;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+}
+.main3-items {
+    padding: 15px;
+    border-radius:10px ;
+
+}
+.main3-items img {
+    height: 50px;
+    border-radius: 10px;
+}
+.main3-items img:hover {
+    transform: scale(1.1);
+  	transition: all 0.5s;
+}

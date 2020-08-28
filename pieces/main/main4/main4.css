@@ -1,0 +1,65 @@
+.main4 {
+    margin: 10px 120px;
+    background-color: white;
+    display: flex; 
+}
+.main4-items {
+    background: rgb(211,192,217);
+    background: linear-gradient(90deg, rgba(211,192,217,1) 0%, rgba(126,70,166,1) 100%);
+   display: flex;
+    margin: 10px 30px;
+    width: 250px;
+    border-radius: 20px;
+}
+.main4-items-avatarsinger {
+    position: relative;
+    margin: 10px 15px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.main4-items-avatarsinger-bg {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00000070;
+   
+    
+}
+.main4-items-avatarsinger img {
+    height: 80px;
+    display: cover;
+    align-content: center;
+}
+.main4-items-avatarsinger:hover .main4-items-avatarsinger-bg {
+    opacity: 1;
+    transition: all 0.4s;
+}
+.main4-items-infor {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+.main4-items-infor button {
+    background: rgb(235,63,130);
+    background: linear-gradient(90deg, rgba(235,63,130,1) 0%, rgba(192,188,195,1) 100%);
+    color: white;
+    font-weight: 400;
+    border-radius: 8px;
+    border: none;
+    outline:none ;
+}
+.main4-items-infor button a {
+    text-decoration: none;
+}
+.main4-items-infor .main4-items-infor-singer {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:#323332 ;
+}

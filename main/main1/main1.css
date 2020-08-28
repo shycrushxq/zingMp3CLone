@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+a {
+	text-decoration: none;
+}
+
+.container1 {
+	margin: 10px 150px;
+	padding: 5px 10px;
+}
+.container1-top {
+    margin-bottom: 15px;
+}
+
+.container1-top h4 {
+    font-size: 1.65rem;
+    font-weight: bold;
+}
+
+ .container1-mid {
+   	display: flex;
+   	justify-content: space-between;
+   }
+  	.container1-mid-item {
+  		display: inline-block;
+  		padding: 5px;
+  		font-size: 1rem;
+
+  	}
+	  	.container1-mid-item a {
+	  		color: black;
+	  		font-size: 1rem;
+	  		display: inline-block;
+	  	}
+	  	.container1-mid-item a:hover {
+			  color: #9182b9;
+			  text-decoration: none;
+	  	}
+  		.container1-mid-item-background {
+  		border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+  		}
+  		.container1-mid-item-background img {
+  		width: 166px;
+        height: 166spx;
+        display: cover;
+        
+  		}
+  		.icon-background {
+  		  opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #00000070;
+        z-index: 1;
+        box-sizing: border-box;
+  		}
+  		.container1-mid-item-background:hover .icon-background {
+  			opacity: 1;
+  		}
+  		.container1-mid-item-background:hover img {
+  			transform: scale(1.4);
+  			transition: all 0.8s;
+  		}

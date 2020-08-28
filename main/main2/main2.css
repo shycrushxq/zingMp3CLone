@@ -1,0 +1,133 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin:0
+}
+a {
+    text-decoration:none ;
+}
+.main2 {
+    height:100%;
+    display: flex;
+    margin:10px 150px ;
+    
+}
+.main2-left {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 80%;
+    padding: 0px;
+    background-color: #362a56bf;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.main2-left img {
+    display: cover;
+    width: 100%;
+    height: 100%;
+    display:inline-block ;
+    opacity: 0.3;
+}
+.main2-left-bg {
+    position: absolute;
+    display: flex;
+}
+.main2-left-bg a {
+    margin:20px ;
+    padding: 5px;
+    color: white;
+    background-color: #48216e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main2-left-bg p {
+    margin:20px;
+    flex-grow: 1;
+    font-weight: 400;
+    color:white;
+    padding:5px;
+}
+.main2-left-bg button {
+    height: 40px;
+    background-color: #39144a;
+    margin-top:20px;
+    margin-right:20px ;
+    margin-left:100px;
+    padding: 5px;
+    color: white;
+    position: relative;
+    border-radius: 9px;
+    outline:none ;
+    cursor: pointer;
+    border:none;
+}
+.main2-left-bg i {
+    margin:5px;
+    opacity: 0.8;
+}
+
+.main2-left-bg button:hover .bt {
+    background-color: white;
+    color: black;
+}
+.main2-right {
+    margin: 0px;
+    background-color:#9771c7
+}
+.main2-right-items {
+    display: flex;
+    padding:10px 5px;
+}
+.main2-right-items .frank {
+    color: chartreuse;
+    font-size: 1.25rem;
+    padding:5px;
+    margin-top: 10px;
+}
+.main2-right-items-bg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px, -5px);
+    
+}
+.main2-right-items-bg-icon {
+    
+    position: absolute;
+    opacity: 0.5;
+    display: none;
+}
+.main2-right-items-bg:hover .main2-right-items-bg-icon {
+    display: block;
+}
+.main2-right-items-bg img {
+    height: 50px;
+}
+.main2-right-items-bg-infor {
+    top: 0;
+    flex-grow: 1;
+    
+}
+.main2-right-items-bg-infor .song {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transform: translate(0px, 5px);
+}
+.main2-right-items-bg-infor .singer {
+    color: white;
+    opacity: 0.7;
+    font-size: 0.75rem;
+    transform: translate(0px, -3px);
+    
+}
+.main2-right-items .rank {
+    color: tomato;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
